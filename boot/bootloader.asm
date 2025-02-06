@@ -34,18 +34,14 @@ gdt_descriptor:
 
 [BITS 32]
 init_protected_mode:
-    ; 세그먼트 레지스터 초기화
     mov ax, DATA_SEG
     mov ds, ax
     mov es, ax
     mov fs, ax
     mov gs, ax
     mov ss, ax
+    mov esp, 0x7C00                ; 스택 포인터 설정
 
-    ; 스택 포인터 설정
-    mov esp, 0x7C00
-
-    ; "Protected Mode!" 메시지 출력
     mov esi, protected_msg
     mov edi, 0xB8000               ; VGA 텍스트 버퍼 주소
     mov ah, 0x0F                   ; 속성 (흰색 텍스트)
