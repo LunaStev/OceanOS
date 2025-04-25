@@ -1,10 +1,9 @@
 #!/bin/bash
 
-set -e  # 스크립트 실행 중 오류 발생 시 즉시 종료
+set -e
 
 echo "🔧 OceanOS 개발 환경 설치 스크립트 실행"
 
-# OS 확인
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     OS="linux"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
@@ -16,7 +15,6 @@ fi
 
 echo "🌍 OS 감지됨: $OS"
 
-# 패키지 설치 함수
 install_packages() {
     echo "📦 필수 패키지 설치 중..."
     if [ "$OS" == "linux" ]; then

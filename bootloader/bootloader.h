@@ -1,3 +1,0 @@
-// OceanOS
-// Bootloader
-// bootloader.h
