@@ -1,6 +1,7 @@
 // OceanOS
 // Kernel Drivers
 // display.c
+#include "io.h"
 #include "display.h"
 
 static int cursor_row = 0;
