@@ -10,5 +10,8 @@ OceanOS is an operating system that completely excludes BIOS and legacy technolo
 ## Status
 It is currently under development and may change depending on the developer's circumstances.
 
+## Contributing
+Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) before submitting PRs.
+
 ## License
 [MPL-2.0](LICENCE)
